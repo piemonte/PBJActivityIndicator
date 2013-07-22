@@ -1,0 +1,274 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		061C10DD179DB23D009C95C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061C10DC179DB23D009C95C3 /* Foundation.framework */; };
+		061C10DF179DB23D009C95C3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061C10DE179DB23D009C95C3 /* CoreGraphics.framework */; };
+		061C10E1179DB23D009C95C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061C10E0179DB23D009C95C3 /* UIKit.framework */; };
+		061C10E7179DB23D009C95C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 061C10E5179DB23D009C95C3 /* InfoPlist.strings */; };
+		061C10E9179DB23D009C95C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 061C10E8179DB23D009C95C3 /* main.m */; };
+		061C10ED179DB23D009C95C3 /* PBJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 061C10EC179DB23D009C95C3 /* PBJAppDelegate.m */; };
+		061C10F3179DB23D009C95C3 /* PBJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 061C10F2179DB23D009C95C3 /* PBJViewController.m */; };
+		06986228179DB2A000BCBE58 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06986227179DB2A000BCBE58 /* SystemConfiguration.framework */; };
+		0698622B179DB35300BCBE58 /* PBJActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698622A179DB35300BCBE58 /* PBJActivityIndicator.m */; };
+		06986230179DB3E800BCBE58 /* Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0698622D179DB3E800BCBE58 /* Base.xcconfig */; };
+		06986231179DB3E800BCBE58 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0698622E179DB3E800BCBE58 /* Debug.xcconfig */; };
+		06986232179DB3E800BCBE58 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0698622F179DB3E800BCBE58 /* Release.xcconfig */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		061C10D9179DB23D009C95C3 /* ActivityIndicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ActivityIndicator.app; path = .app; sourceTree = BUILT_PRODUCTS_DIR; };
+		061C10DC179DB23D009C95C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		061C10DE179DB23D009C95C3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		061C10E0179DB23D009C95C3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		061C10E4179DB23D009C95C3 /* ActivityIndicator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ActivityIndicator-Info.plist"; sourceTree = "<group>"; };
+		061C10E6179DB23D009C95C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		061C10E8179DB23D009C95C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		061C10EA179DB23D009C95C3 /* ActivityIndicator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ActivityIndicator-Prefix.pch"; sourceTree = "<group>"; };
+		061C10EB179DB23D009C95C3 /* PBJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBJAppDelegate.h; sourceTree = "<group>"; };
+		061C10EC179DB23D009C95C3 /* PBJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBJAppDelegate.m; sourceTree = "<group>"; };
+		061C10F1179DB23D009C95C3 /* PBJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBJViewController.h; sourceTree = "<group>"; };
+		061C10F2179DB23D009C95C3 /* PBJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBJViewController.m; sourceTree = "<group>"; };
+		06986227179DB2A000BCBE58 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		06986229179DB35300BCBE58 /* PBJActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBJActivityIndicator.h; path = ../Source/PBJActivityIndicator.h; sourceTree = "<group>"; };
+		0698622A179DB35300BCBE58 /* PBJActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBJActivityIndicator.m; path = ../Source/PBJActivityIndicator.m; sourceTree = "<group>"; };
+		0698622D179DB3E800BCBE58 /* Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Base.xcconfig; path = ../Base.xcconfig; sourceTree = "<group>"; };
+		0698622E179DB3E800BCBE58 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = ../Debug.xcconfig; sourceTree = "<group>"; };
+		0698622F179DB3E800BCBE58 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = ../Release.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		061C10D6179DB23D009C95C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06986228179DB2A000BCBE58 /* SystemConfiguration.framework in Frameworks */,
+				061C10DF179DB23D009C95C3 /* CoreGraphics.framework in Frameworks */,
+				061C10E1179DB23D009C95C3 /* UIKit.framework in Frameworks */,
+				061C10DD179DB23D009C95C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		061C10D0179DB23D009C95C3 = {
+			isa = PBXGroup;
+			children = (
+				06986229179DB35300BCBE58 /* PBJActivityIndicator.h */,
+				0698622A179DB35300BCBE58 /* PBJActivityIndicator.m */,
+				061C10E2179DB23D009C95C3 /* ActivityIndicator */,
+				061C10DB179DB23D009C95C3 /* Frameworks */,
+				061C10DA179DB23D009C95C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		061C10DA179DB23D009C95C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				061C10D9179DB23D009C95C3 /* ActivityIndicator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		061C10DB179DB23D009C95C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06986227179DB2A000BCBE58 /* SystemConfiguration.framework */,
+				061C10DC179DB23D009C95C3 /* Foundation.framework */,
+				061C10DE179DB23D009C95C3 /* CoreGraphics.framework */,
+				061C10E0179DB23D009C95C3 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		061C10E2179DB23D009C95C3 /* ActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				061C10EB179DB23D009C95C3 /* PBJAppDelegate.h */,
+				061C10EC179DB23D009C95C3 /* PBJAppDelegate.m */,
+				061C10F1179DB23D009C95C3 /* PBJViewController.h */,
+				061C10F2179DB23D009C95C3 /* PBJViewController.m */,
+				0698622C179DB39B00BCBE58 /* Resources */,
+				061C10E3179DB23D009C95C3 /* Supporting Files */,
+			);
+			path = ActivityIndicator;
+			sourceTree = "<group>";
+		};
+		061C10E3179DB23D009C95C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				061C10E4179DB23D009C95C3 /* ActivityIndicator-Info.plist */,
+				061C10E5179DB23D009C95C3 /* InfoPlist.strings */,
+				061C10E8179DB23D009C95C3 /* main.m */,
+				061C10EA179DB23D009C95C3 /* ActivityIndicator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0698622C179DB39B00BCBE58 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0698622D179DB3E800BCBE58 /* Base.xcconfig */,
+				0698622E179DB3E800BCBE58 /* Debug.xcconfig */,
+				0698622F179DB3E800BCBE58 /* Release.xcconfig */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		061C10D8179DB23D009C95C3 /* ActivityIndicator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 061C110B179DB23D009C95C3 /* Build configuration list for PBXNativeTarget "ActivityIndicator" */;
+			buildPhases = (
+				061C10D5179DB23D009C95C3 /* Sources */,
+				061C10D6179DB23D009C95C3 /* Frameworks */,
+				061C10D7179DB23D009C95C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ActivityIndicator;
+			productName = ActivityIndicator;
+			productReference = 061C10D9179DB23D009C95C3 /* ActivityIndicator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		061C10D1179DB23D009C95C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PBJ;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Patrick Piemonte";
+			};
+			buildConfigurationList = 061C10D4179DB23D009C95C3 /* Build configuration list for PBXProject "ActivityIndicator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 061C10D0179DB23D009C95C3;
+			productRefGroup = 061C10DA179DB23D009C95C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				061C10D8179DB23D009C95C3 /* ActivityIndicator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		061C10D7179DB23D009C95C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06986232179DB3E800BCBE58 /* Release.xcconfig in Resources */,
+				061C10E7179DB23D009C95C3 /* InfoPlist.strings in Resources */,
+				06986230179DB3E800BCBE58 /* Base.xcconfig in Resources */,
+				06986231179DB3E800BCBE58 /* Debug.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		061C10D5179DB23D009C95C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				061C10F3179DB23D009C95C3 /* PBJViewController.m in Sources */,
+				061C10E9179DB23D009C95C3 /* main.m in Sources */,
+				061C10ED179DB23D009C95C3 /* PBJAppDelegate.m in Sources */,
+				0698622B179DB35300BCBE58 /* PBJActivityIndicator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		061C10E5179DB23D009C95C3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				061C10E6179DB23D009C95C3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		061C1109179DB23D009C95C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0698622E179DB3E800BCBE58 /* Debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		061C110A179DB23D009C95C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0698622F179DB3E800BCBE58 /* Release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		061C110C179DB23D009C95C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ActivityIndicator/ActivityIndicator-Prefix.pch";
+				INFOPLIST_FILE = "ActivityIndicator/ActivityIndicator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		061C110D179DB23D009C95C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ActivityIndicator/ActivityIndicator-Prefix.pch";
+				INFOPLIST_FILE = "ActivityIndicator/ActivityIndicator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		061C10D4179DB23D009C95C3 /* Build configuration list for PBXProject "ActivityIndicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				061C1109179DB23D009C95C3 /* Debug */,
+				061C110A179DB23D009C95C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		061C110B179DB23D009C95C3 /* Build configuration list for PBXNativeTarget "ActivityIndicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				061C110C179DB23D009C95C3 /* Debug */,
+				061C110D179DB23D009C95C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 061C10D1179DB23D009C95C3 /* Project object */;
+}
