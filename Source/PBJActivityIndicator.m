@@ -45,10 +45,12 @@
 
         // update counter for type
         if (!_activityCounters) {
-            _activityCounters = calloc(sizeof(NSInteger), activityType);
-        } else if (_activityCountersMax < activityType) {
-            NSInteger *counters = calloc(sizeof(NSInteger), activityType);
-            
+            size_t size = activityType + 1;
+            _activityCounters = calloc(sizeof(NSInteger), size);
+            _activityCountersMax = activityType;
+        } else if (activityType > _activityCountersMax) {
+            size_t size = activityType + 1;
+            NSInteger *counters = calloc(sizeof(NSInteger), size);
             memcpy(_activityCounters, counters, sizeof(NSInteger) * _activityCountersMax);
             _activityCountersMax = activityType;
             
