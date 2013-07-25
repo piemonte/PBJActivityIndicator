@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "PBJActivityIndicator"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "iOS component for efficient status bar indication."
   s.homepage     = "https://github.com/piemonte/PBJActivityIndicator"
   s.license      = "MIT"
