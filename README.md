@@ -1,7 +1,7 @@
 ## PBJActivityIndicator
-'PBJActivityIndicator' is an iOS component for displaying the status bar indicator efficiently across multiple request objects.
+'PBJActivityIndicator' is an iOS component for displaying the status bar indicator efficiently across multiple objects.
 
-Mobile applications that perform a variety of network requests can easily provide indication of network use without any indicator flickering or incorrect state. This is accomplished by calling an activity indictor block before the request is sent and after the request succeeds or fails.
+Mobile applications that perform a variety of network requests can easily provide indication of network use without any indicator flickering or incorrect state. This can be accomplished by calling an activity indictor block before a request is sent and then after the request succeeds or fails.
 
 It is also possible to add request specific debug logging within the activity blocks.
 
@@ -15,7 +15,7 @@ The activity indicator singleton is provided for convince, an ivar is also just 
 
 ```objective-c
     PBJActivityIndicatorBlock activityIndicatorBlock = ^(BOOL activity) {
-        // it is possible to also insert logging particular to the activity
+        // it is also possible to add logging particular to the activity here
         [[PBJActivityIndicator sharedActivityIndicator] setActivity:activity forType:PBJActivityServiceTypeFollowers];
     };
 ```
@@ -24,11 +24,10 @@ The activity indicator singleton is provided for convince, an ivar is also just 
     // before making a request for the service 'Followers', enable activity indicator
     if (activityIndicatorBlock)
         activityIndicatorBlock(YES);
+```
 
-// …   
-
+```objective-c
     // after the request completes or fails, disable the activity indicator
     if (activityIndicatorBlock)
         activityIndicatorBlock(NO);
-
 ```
