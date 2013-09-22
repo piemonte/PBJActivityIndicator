@@ -5,7 +5,17 @@ Mobile applications that perform a variety of network requests can easily provid
 
 It is also possible to add request specific debug logging within the activity blocks.
 
-### Basic Use
+## Installation
+
+[CocoaPods](http://cocoapods.org) is the recommended method of installing PBJActivityIndicator, just add the following line to your `Podfile`:
+
+#### Podfile
+
+```ruby
+pod 'PBJActivityIndicator'
+```
+
+## Usage
 
 The activity indicator singleton is provided for convince, an ivar is also just as effective.
 
