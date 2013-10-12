@@ -41,3 +41,7 @@ The activity indicator singleton is provided for convince, an ivar is also just 
     if (activityIndicatorBlock)
         activityIndicatorBlock(NO);
 ```
+
+## License
+
+PBJActivityIndicator is available under the MIT license, see the LICENSE file for more information.
