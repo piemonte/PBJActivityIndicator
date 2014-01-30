@@ -25,18 +25,18 @@ The activity indicator singleton is provided for convenience, using an instance 
 
 ```objective-c
 
-    // start the activity indicator for the type, 'MyRequestTypeHttpGet'
+    // enable the activity indicator for the type, 'MyRequestTypeHttpGet'
     [[PBJActivityIndicator sharedActivityIndicator] setActivity:YES forType:MyRequestTypeHttpGet];
 
     // perform some type of loading request, disable the indicator in the completion blocks or delegate callback
     [dataRequester requestDataWithSuccessHandler:^() {
     
-        // enable indicator
+        // disable indicator on success
         [[PBJActivityIndicator sharedActivityIndicator] setActivity:NO forType:MyRequestTypeHttpGet];
     
     } failureHandler:^() {
     
-        // disable indicator
+        // disable indicator on failure
         [[PBJActivityIndicator sharedActivityIndicator] setActivity:NO forType:MyRequestTypeHttpGet];
     
     }];
@@ -59,13 +59,13 @@ Another technique for integrating 'PBJActivityIndicator' is to create a block th
 Within that request service object, call the block to activate the appropriate state.
 
 ```objective-c
-    // before making a request for the service 'MyRequestServiceType', enable activity indicator
+    // enable the indicator before making a request for the service 'MyRequestServiceType'
     if (activityIndicatorBlock)
         activityIndicatorBlock(YES);
 ```
 
 ```objective-c
-    // after the request completes or fails, disable the activity indicator
+    // disable the indicator after the request succeeds or fails
     if (activityIndicatorBlock)
         activityIndicatorBlock(NO);
 ```
