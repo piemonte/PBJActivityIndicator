@@ -1,7 +1,7 @@
 ## PBJActivityIndicator
 'PBJActivityIndicator' is an iOS component for displaying the status bar indicator efficiently across multiple objects.
 
-When integrated, mobile apps that perform a variety of network requests can easily display an indication of network use in the status bar without any indicator flickering or incorrect loading state. This can be accomplished by calling an activity indictor block before a request is sent and then after the request succeeds or fails.
+When integrated, mobile apps that perform a variety of network requests can easily display an indication of network use in the status bar without any indicator flickering or incorrect loading state. This can be accomplished simply by calling an activity indictor before a request is sent and then after the request succeeds or fails.
 
 Please review the [release history](https://github.com/piemonte/PBJActivityIndicator/releases) for more information. If you have questions, [github issues](https://github.com/piemonte/PBJActivityIndicator/issues) is a great means to start a discussion, this allows others to benefit and chime in on the project too.
 
