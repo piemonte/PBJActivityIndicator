@@ -12,6 +12,7 @@
 
 // PBJActivityIndicator types
 typedef NS_ENUM(NSInteger, PBJActivityServiceType) {
+    PBJActivityServiceTypeFavorites = 0,
     PBJActivityServiceTypeFollowers,
     PBJActivityServiceTypePhotos,
     PBJActivityServiceTypeCount
@@ -40,9 +41,9 @@ typedef NS_ENUM(NSInteger, PBJActivityServiceType) {
 
     // ...
 
-    // after request completes or fails, disable activity indicator from it's completionHandler
-//  if (activityIndicatorBlock)
-//      activityIndicatorBlock(NO);
+    // after request completes and fails, disable activity indicator from it's completionHandler
+//    if (activityIndicatorBlock)
+//        activityIndicatorBlock(NO);
     
     return YES;
 }
