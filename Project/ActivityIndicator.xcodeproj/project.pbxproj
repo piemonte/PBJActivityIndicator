@@ -148,7 +148,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = PBJ;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Patrick Piemonte";
 			};
 			buildConfigurationList = 061C10D4179DB23D009C95C3 /* Build configuration list for PBXProject "ActivityIndicator" */;
