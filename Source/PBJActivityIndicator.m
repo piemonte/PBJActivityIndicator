@@ -9,6 +9,10 @@
 
 @interface PBJActivityIndicator ()
 {
+	BOOL _suppressed;
+    NSInteger _activityActive;
+    NSInteger *_activityCounters;
+    NSUInteger _activityCountersMax;
 }
 
 - (void)_updateActivityIndicator;
@@ -17,7 +21,7 @@
 
 @implementation PBJActivityIndicator
 
-@synthesize suppress = _suppress;
+@synthesize suppressed = _suppressed;
 
 #pragma mark - singleton
 
@@ -69,16 +73,18 @@
     });
 }
 
-- (void)setSuppress:(BOOL)suppressed
+- (void)setSuppressed:(BOOL)suppressed
 {
-    _suppress = suppressed;
+    _suppressed = suppressed;
     [self _updateActivityIndicator];
 }
+
+#pragma mark - private
 
 - (void)_updateActivityIndicator
 {
     BOOL isActive = (_activityActive != 0);
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:(isActive && !_suppress)];
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:(isActive && !_suppressed)];
 }
 
 @end

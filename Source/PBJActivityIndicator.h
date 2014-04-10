@@ -8,37 +8,20 @@
 #import <Foundation/Foundation.h>
 
 //
-// brief activity indicator how-to:
+// 1. define strings to indicator activity type
+//      Note: an activity type is simple an integer used to track a particular type of activity, (HTTPGet == 1, HTTPPost == 2, etc)
 //
-// 1. define an enum to track activity across different component types
-//    typedef NS_ENUM(NSUInteger, PBJActivityServiceType) ...
-//
-// 2. setup your components use a block, based on their network activity type (followers, pictures, etc.)
-//
-//  PBJActivityIndicatorBlock block = ^(BOOL activity) {
-//      [self setActivity:networkActivity forType:PBJActivityServiceTypeFollowers];
-//  };
-//
-// 3. before and after any network requests simply call, block(YES) and then block(NO), the rest is magic
+// 2. add a setActivity call before and after your network requests (complete but also failure blocks!)
 //
 
 typedef void (^PBJActivityIndicatorBlock)(BOOL activity);
 
 @interface PBJActivityIndicator : NSObject
-{
-@private
-	BOOL _suppress;
-    
-    NSInteger _activityActive;
-    
-    NSInteger *_activityCounters;
-    NSUInteger _activityCountersMax;
-}
 
 + (PBJActivityIndicator *)sharedActivityIndicator;
 
-// suppress all activity state, (nice for applicationDidEnterBackground, applicationWillEnterForeground)
-@property (nonatomic, getter=isSuppressed) BOOL suppress;
+// suppress all activity indicator state, (use with applicationDidEnterBackground, applicationWillEnterForeground)
+@property (nonatomic, getter=isSuppressed) BOOL suppressed;
 
 - (void)setActivity:(BOOL)active forType:(NSUInteger)activityType;
 
