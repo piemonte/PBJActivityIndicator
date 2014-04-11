@@ -50,12 +50,12 @@ typedef NS_ENUM(NSInteger, PBJActivityServiceType) {
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    [[PBJActivityIndicator sharedActivityIndicator] setSuppress:YES];
+    [[PBJActivityIndicator sharedActivityIndicator] setSuppressed:YES];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
-    [[PBJActivityIndicator sharedActivityIndicator] setSuppress:NO];
+    [[PBJActivityIndicator sharedActivityIndicator] setSuppressed:NO];
 }
 
 @end
