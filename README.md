@@ -1,3 +1,5 @@
+![PBJActivityIndicator](https://raw.github.com/piemonte/PBJActivityIndicator/master/PBJActivityIndicator.gif)
+
 ## PBJActivityIndicator
 'PBJActivityIndicator' is an iOS component for displaying the status bar loading indicator efficiently across multiple objects.
 
