@@ -14,6 +14,9 @@
 		061C10E9179DB23D009C95C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 061C10E8179DB23D009C95C3 /* main.m */; };
 		061C10ED179DB23D009C95C3 /* PBJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 061C10EC179DB23D009C95C3 /* PBJAppDelegate.m */; };
 		061C10F3179DB23D009C95C3 /* PBJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 061C10F2179DB23D009C95C3 /* PBJViewController.m */; };
+		067FFEB418F85B5900E84FD0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 067FFEB118F85B5900E84FD0 /* Default-568h@2x.png */; };
+		067FFEB518F85B5900E84FD0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 067FFEB218F85B5900E84FD0 /* Default.png */; };
+		067FFEB618F85B5900E84FD0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 067FFEB318F85B5900E84FD0 /* Default@2x.png */; };
 		06986228179DB2A000BCBE58 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06986227179DB2A000BCBE58 /* SystemConfiguration.framework */; };
 		0698622B179DB35300BCBE58 /* PBJActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0698622A179DB35300BCBE58 /* PBJActivityIndicator.m */; };
 		06986230179DB3E800BCBE58 /* Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0698622D179DB3E800BCBE58 /* Base.xcconfig */; };
@@ -22,7 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		061C10D9179DB23D009C95C3 /* ActivityIndicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ActivityIndicator.app; path = .app; sourceTree = BUILT_PRODUCTS_DIR; };
+		061C10D9179DB23D009C95C3 /* ActivityIndicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivityIndicator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		061C10DC179DB23D009C95C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		061C10DE179DB23D009C95C3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		061C10E0179DB23D009C95C3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -34,6 +37,9 @@
 		061C10EC179DB23D009C95C3 /* PBJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBJAppDelegate.m; sourceTree = "<group>"; };
 		061C10F1179DB23D009C95C3 /* PBJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PBJViewController.h; sourceTree = "<group>"; };
 		061C10F2179DB23D009C95C3 /* PBJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBJViewController.m; sourceTree = "<group>"; };
+		067FFEB118F85B5900E84FD0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		067FFEB218F85B5900E84FD0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		067FFEB318F85B5900E84FD0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		06986227179DB2A000BCBE58 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		06986229179DB35300BCBE58 /* PBJActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBJActivityIndicator.h; path = ../Source/PBJActivityIndicator.h; sourceTree = "<group>"; };
 		0698622A179DB35300BCBE58 /* PBJActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBJActivityIndicator.m; path = ../Source/PBJActivityIndicator.m; sourceTree = "<group>"; };
@@ -114,6 +120,9 @@
 		0698622C179DB39B00BCBE58 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				067FFEB118F85B5900E84FD0 /* Default-568h@2x.png */,
+				067FFEB218F85B5900E84FD0 /* Default.png */,
+				067FFEB318F85B5900E84FD0 /* Default@2x.png */,
 				0698622D179DB3E800BCBE58 /* Base.xcconfig */,
 				0698622E179DB3E800BCBE58 /* Debug.xcconfig */,
 				0698622F179DB3E800BCBE58 /* Release.xcconfig */,
@@ -175,8 +184,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				06986232179DB3E800BCBE58 /* Release.xcconfig in Resources */,
+				067FFEB518F85B5900E84FD0 /* Default.png in Resources */,
 				061C10E7179DB23D009C95C3 /* InfoPlist.strings in Resources */,
 				06986230179DB3E800BCBE58 /* Base.xcconfig in Resources */,
+				067FFEB418F85B5900E84FD0 /* Default-568h@2x.png in Resources */,
+				067FFEB618F85B5900E84FD0 /* Default@2x.png in Resources */,
 				06986231179DB3E800BCBE58 /* Debug.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
