@@ -27,10 +27,10 @@
 
 @interface PBJActivityIndicator ()
 {
-	BOOL _suppressed;
     NSInteger _activityActive;
-    NSInteger *_activityCounters;
-    NSUInteger _activityCountersMax;
+    BOOL _suppressed;
+    
+    NSMapTable *_activityCounters;
 }
 
 - (void)_updateActivityIndicator;
@@ -57,37 +57,36 @@
 
 - (void)setActivity:(BOOL)active forType:(NSUInteger)activityType
 {
-    NSInteger counterIncrement = active ? 1 : -1;
     NSUInteger delayInSeconds = active ? 0 : 2;
-
     dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
     dispatch_after(time, dispatch_get_main_queue(), ^(void) {
 
-        BOOL wasActive = (_activityActive != 0);
-
-        // update counter for type
         if (!_activityCounters) {
-            size_t size = activityType + 1;
-            _activityCounters = calloc(sizeof(NSInteger), size);
-            _activityCountersMax = activityType;
-        } else if (activityType > _activityCountersMax) {
-            size_t size = activityType + 1;
-            NSInteger *counters = calloc(sizeof(NSInteger), size);
-            memcpy(_activityCounters, counters, sizeof(NSInteger) * _activityCountersMax);
-            _activityCountersMax = activityType;
-            
-            free(_activityCounters);
-            _activityCounters = counters;
+            _activityCounters = [NSMapTable weakToStrongObjectsMapTable];
         }
-        _activityCounters[activityType] += counterIncrement;
+        
+        NSNumber *count = [_activityCounters objectForKey:@(activityType)];
+        if (count) {
+            [_activityCounters removeObjectForKey:@(activityType)];
+        } else {
+            count = @(0);
+        }
+        
+        NSUInteger updatedCount = active ? [count unsignedIntegerValue] + 1 : [count unsignedIntegerValue] - 1;
+        if (updatedCount != 0)
+            [_activityCounters setObject:@(updatedCount) forKey:@(activityType)];
+
+        if ([_activityCounters count] == 0)
+            _activityCounters = nil;
 
         // update active state
-        _activityActive += counterIncrement;
-
+        BOOL wasActive = (_activityActive != 0);
+        _activityActive += (active ? 1 : -1);
         BOOL isActive = (_activityActive != 0);
-        
+
         if ((!wasActive && isActive) || (wasActive && !isActive))
             [self _updateActivityIndicator];
+        
     });
 }
 
@@ -95,6 +94,11 @@
 {
     _suppressed = suppressed;
     [self _updateActivityIndicator];
+}
+
+- (BOOL)isActive
+{
+    return _activityActive != 0;
 }
 
 #pragma mark - private

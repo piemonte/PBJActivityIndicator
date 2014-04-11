@@ -38,9 +38,10 @@ typedef void (^PBJActivityIndicatorBlock)(BOOL activity);
 
 + (PBJActivityIndicator *)sharedActivityIndicator;
 
-// suppress all activity indicator state, (use with applicationDidEnterBackground, applicationWillEnterForeground)
+// suppress activity indicator, (use with applicationDidEnterBackground, applicationWillEnterForeground)
 @property (nonatomic, getter=isSuppressed) BOOL suppressed;
 
+@property (nonatomic, readonly, getter=isActive) BOOL active;
 - (void)setActivity:(BOOL)active forType:(NSUInteger)activityType;
 
 @end
