@@ -41,8 +41,8 @@
 		067FFEB218F85B5900E84FD0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		067FFEB318F85B5900E84FD0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		06986227179DB2A000BCBE58 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		06986229179DB35300BCBE58 /* PBJActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBJActivityIndicator.h; path = ../Source/PBJActivityIndicator.h; sourceTree = "<group>"; };
-		0698622A179DB35300BCBE58 /* PBJActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBJActivityIndicator.m; path = ../Source/PBJActivityIndicator.m; sourceTree = "<group>"; };
+		06986229179DB35300BCBE58 /* PBJActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PBJActivityIndicator.h; path = ../../Source/PBJActivityIndicator.h; sourceTree = "<group>"; };
+		0698622A179DB35300BCBE58 /* PBJActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PBJActivityIndicator.m; path = ../../Source/PBJActivityIndicator.m; sourceTree = "<group>"; };
 		0698622D179DB3E800BCBE58 /* Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Base.xcconfig; path = ../Base.xcconfig; sourceTree = "<group>"; };
 		0698622E179DB3E800BCBE58 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = ../Debug.xcconfig; sourceTree = "<group>"; };
 		0698622F179DB3E800BCBE58 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = ../Release.xcconfig; sourceTree = "<group>"; };
@@ -66,9 +66,8 @@
 		061C10D0179DB23D009C95C3 = {
 			isa = PBXGroup;
 			children = (
-				06986229179DB35300BCBE58 /* PBJActivityIndicator.h */,
-				0698622A179DB35300BCBE58 /* PBJActivityIndicator.m */,
-				061C10E2179DB23D009C95C3 /* ActivityIndicator */,
+				06A835F419104A2000A16181 /* PBJActivityIndicator */,
+				061C10E2179DB23D009C95C3 /* App */,
 				061C10DB179DB23D009C95C3 /* Frameworks */,
 				061C10DA179DB23D009C95C3 /* Products */,
 			);
@@ -93,7 +92,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		061C10E2179DB23D009C95C3 /* ActivityIndicator */ = {
+		061C10E2179DB23D009C95C3 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				061C10EB179DB23D009C95C3 /* PBJAppDelegate.h */,
@@ -103,6 +102,7 @@
 				0698622C179DB39B00BCBE58 /* Resources */,
 				061C10E3179DB23D009C95C3 /* Supporting Files */,
 			);
+			name = App;
 			path = ActivityIndicator;
 			sourceTree = "<group>";
 		};
@@ -128,6 +128,16 @@
 				0698622F179DB3E800BCBE58 /* Release.xcconfig */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		06A835F419104A2000A16181 /* PBJActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				06986229179DB35300BCBE58 /* PBJActivityIndicator.h */,
+				0698622A179DB35300BCBE58 /* PBJActivityIndicator.m */,
+			);
+			name = PBJActivityIndicator;
+			path = ActivityIndicator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
