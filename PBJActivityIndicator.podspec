@@ -9,4 +9,5 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '6.0'
   s.source_files = 'Source'
   s.requires_arc = true
+  s.screenshot   = "https://raw.github.com/piemonte/PBJActivityIndicator/master/PBJActivityIndicator.gif"
 end
