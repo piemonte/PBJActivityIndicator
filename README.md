@@ -7,6 +7,9 @@ When integrated, mobile apps that perform a variety of network requests can easi
 
 Please review the [release history](https://github.com/piemonte/PBJActivityIndicator/releases) for more information. If you have questions or ideas, the [github issues page](https://github.com/piemonte/PBJActivityIndicator/issues) is a great means to start a discussion but also allows others to benefit and chime in on the project too.
 
+[![Build Status](https://travis-ci.org/piemonte/PBJActivityIndicator.svg)](https://travis-ci.org/piemonte/PBJActivityIndicator)
+[![Pod Version](https://img.shields.io/cocoapods/v/PBJActivityIndicator.svg?style=flat)](http://cocoadocs.org/docsets/PBJActivityIndicator/)
+
 ## Installation
 
 [CocoaPods](http://cocoapods.org) is the recommended method of installing PBJActivityIndicator, just add the following line to your `Podfile`:
